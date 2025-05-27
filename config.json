@@ -1,0 +1,33 @@
+{
+    "monitoring": {
+        "interval": 5,
+        "history_size": 1000,
+        "enable_auto_response": true
+    },
+    "thresholds": {
+        "bandwidth_threshold": 2.0,
+        "connection_threshold": 2.5,
+        "packet_threshold": 2.0,
+        "max_connections_per_ip": 20,
+        "max_ports_per_scan": 15
+    },
+    "response": {
+        "auto_block_duration": 3600,
+        "response_cooldown": 60,
+        "max_blocked_ips": 1000
+    },
+    "logging": {
+        "log_level": "INFO",
+        "max_log_size": 10485760,
+        "log_retention_days": 30
+    },
+    "network": {
+        "monitor_interfaces": "all",
+        "capture_packets": false,
+        "deep_packet_inspection": false
+    },
+    "metadata": {
+        "version": "1.0",
+        "created": "2024-01-01T00:00:00"
+    }
+}
